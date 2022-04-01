@@ -13,7 +13,12 @@ class App extends Component {
   IncrementItem = () => {
     this.setState({ clicks: this.state.clicks + 1 });
   }
-  
+  DecreaseItem = () => {
+    this.setState({ clicks: this.state.clicks - 1 });
+  }
+  ToggleClick = () => {
+    this.setState({ show: !this.state.show });
+  }
 
   render() {
     return (
